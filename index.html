@@ -7,44 +7,54 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:#F8F7F3;font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif;padding:1rem;}
-.wrap{max-width:480px;margin:0 auto;background:#fff;border-radius:16px;padding:1.25rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
-.badge{display:inline-block;font-size:10px;padding:3px 8px;border-radius:20px;border:0.5px solid #D3D1C7;color:#5F5E5A;background:#F8F7F3;white-space:nowrap;}
+.wrap{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+.badge{display:inline-block;font-size:11px;padding:3px 10px;border-radius:20px;border:0.5px solid #D3D1C7;color:#5F5E5A;background:#F8F7F3;white-space:nowrap;}
 .badge.green{background:#E1F5EE;color:#085041;border-color:#5DCAA5;}
-.badges{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;}
-.title{font-size:18px;font-weight:600;color:#2C2C2A;margin-bottom:3px;}
-.subtitle{font-size:12px;color:#888780;line-height:1.6;margin-bottom:1.25rem;}
-.divider{height:0.5px;background:#E0DED6;margin:1rem 0;}
-.slabel{font-size:10px;color:#888780;letter-spacing:0.05em;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;}
+.title{font-size:20px;font-weight:600;color:#2C2C2A;margin-bottom:4px;}
+.subtitle{font-size:13px;color:#888780;line-height:1.7;margin-bottom:1.5rem;}
+.divider{height:0.5px;background:#E0DED6;margin:1.25rem 0;}
+.slabel{font-size:11px;color:#888780;letter-spacing:0.05em;margin-bottom:10px;display:flex;align-items:center;gap:6px;}
 .slabel::after{content:'';flex:1;height:0.5px;background:#E0DED6;}
-.cc{background:#F8F7F3;border-radius:10px;padding:0.65rem;margin-bottom:8px;}
-.ct{font-size:10px;color:#888780;margin-bottom:6px;}
-.br{display:flex;align-items:center;gap:6px;margin-bottom:4px;}
-.bn{font-size:11px;color:#2C2C2A;width:80px;min-width:80px;flex-shrink:0;line-height:1.3;}
-.bnw{font-size:11px;color:#2C2C2A;width:95px;min-width:95px;flex-shrink:0;line-height:1.3;}
-.bt{flex:1;height:6px;background:#E0DED6;border-radius:3px;overflow:hidden;min-width:0;}
-.bf{height:100%;border-radius:3px;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}
+.cc{background:#F8F7F3;border-radius:10px;padding:0.85rem;margin-bottom:8px;}
+.ct{font-size:11px;color:#888780;margin-bottom:8px;font-weight:500;}
+.br{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
+.bn{font-size:12px;color:#2C2C2A;width:95px;min-width:95px;flex-shrink:0;line-height:1.3;}
+.bnw{font-size:12px;color:#2C2C2A;width:110px;min-width:110px;flex-shrink:0;line-height:1.3;}
+.bt{flex:1;height:8px;background:#E0DED6;border-radius:4px;overflow:hidden;min-width:0;}
+.bf{height:100%;border-radius:4px;}
 .teal{background:#1D9E75;}.tl{background:#9FE1CB;}.pur{background:#7F77DD;}
-.amb{background:#EF9F27;}.gr{background:#B4B2A9;}
-.bv{font-size:10px;color:#888780;width:44px;min-width:44px;text-align:right;flex-shrink:0;white-space:nowrap;}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
-.confirm-card{background:#fff;border:2px solid #1D9E75;border-radius:14px;padding:1rem;margin-bottom:1rem;}
-.crow{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:0.5px solid #E0DED6;}
+.amb{background:#EF9F27;}.gr{background:#C8C6BC;}
+.bv{font-size:11px;color:#888780;width:52px;min-width:52px;text-align:right;flex-shrink:0;white-space:nowrap;}
+.confirm-card{background:#fff;border:2px solid #1D9E75;border-radius:14px;padding:1.1rem 1.25rem;margin-bottom:1rem;}
+.crow{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:0.5px solid #E0DED6;}
 .crow:last-child{border-bottom:none;}
-.cl{font-size:11px;color:#888780;width:46px;min-width:46px;flex-shrink:0;padding-top:2px;line-height:1.5;}
-.cv{font-size:12px;color:#2C2C2A;font-weight:600;line-height:1.6;flex:1;min-width:0;}
-.cv-sub{font-size:11px;color:#888780;font-weight:400;margin-top:3px;line-height:1.6;}
-.stag{font-size:10px;padding:1px 6px;border-radius:10px;display:inline-block;margin-top:3px;white-space:nowrap;}
-.vote-box{background:#E1F5EE;border-radius:12px;padding:1rem;border:2px solid #1D9E75;margin-bottom:1rem;}
-.vote-title{font-size:14px;font-weight:600;color:#085041;margin-bottom:8px;}
-.vote-body{font-size:12px;color:#085041;line-height:1.8;}
-.vote-link{display:block;margin-top:10px;background:#1D9E75;color:#fff;text-align:center;padding:10px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:600;}
-.next-card{background:#F8F7F3;border-radius:12px;padding:1rem;}
-.nrow{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:0.5px solid #E0DED6;}
+.cl{font-size:12px;color:#888780;width:52px;min-width:52px;flex-shrink:0;padding-top:2px;line-height:1.5;}
+.cv{font-size:13px;color:#2C2C2A;font-weight:600;line-height:1.6;flex:1;min-width:0;}
+.cv-sub{font-size:12px;color:#888780;font-weight:400;margin-top:3px;line-height:1.6;}
+.stag{font-size:10px;padding:2px 7px;border-radius:10px;display:inline-block;margin-top:3px;white-space:nowrap;}
+.vote-box{background:#E1F5EE;border-radius:12px;padding:1.1rem 1.25rem;border:2px solid #1D9E75;margin-bottom:1rem;}
+.vote-title{font-size:15px;font-weight:600;color:#085041;margin-bottom:8px;}
+.vote-body{font-size:13px;color:#085041;line-height:1.8;}
+.vote-link{display:block;margin-top:12px;background:#1D9E75;color:#fff;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-size:14px;font-weight:600;}
+.next-card{background:#F8F7F3;border-radius:12px;padding:1rem 1.25rem;}
+.nrow{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:0.5px solid #E0DED6;}
 .nrow:last-child{border-bottom:none;}
-.nicon{width:22px;min-width:22px;text-align:center;flex-shrink:0;font-size:16px;}
-.ntitle{font-size:12px;font-weight:600;color:#2C2C2A;margin-bottom:2px;}
-.nsub{font-size:11px;color:#888780;line-height:1.6;}
-.footer{text-align:center;margin-top:1.25rem;padding:0.85rem;background:#F8F7F3;border-radius:12px;}
+.nicon{width:24px;min-width:24px;text-align:center;flex-shrink:0;font-size:18px;}
+.ntitle{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:2px;}
+.nsub{font-size:12px;color:#888780;line-height:1.6;}
+.footer{text-align:center;margin-top:1.5rem;padding:1rem;background:#F8F7F3;border-radius:12px;}
+
+/* 모바일: 1열로 전환 */
+@media(max-width:540px){
+  .wrap{padding:1rem;}
+  .title{font-size:17px;}
+  .two-col{grid-template-columns:1fr;}
+  .bn{width:85px;min-width:85px;}
+  .bnw{width:100px;min-width:100px;}
+  .bt{height:10px;}
+}
 </style>
 </head>
 <body>
@@ -178,7 +188,7 @@ body{background:#F8F7F3;font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-se
 
   <div class="vote-box">
     <div class="vote-title">7월 11~12일 MT 참석 가능하신가요?</div>
-    <div class="vote-body">참석 인원에 따라 <strong>객실 구성 및 추가 여부</strong>가 결정됩니다.<br>원활한 진행을 위해 꼭 참여해 주세요! 🙏</div>
+    <div class="vote-body">참석 인원에 따라 <strong>룸 타입 변경 및 추가 예약</strong>이 결정됩니다.<br>원활한 MT 진행을 위해 꼭꼭꼭 참여해 주세요! 🙏</div>
     <a class="vote-link" href="https://forms.gle/2AMCzTEzDdwD9VTW8">👉 참석 여부 투표하기</a>
   </div>
 
@@ -190,14 +200,14 @@ body{background:#F8F7F3;font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-se
       <span class="nicon">🔔</span>
       <div style="flex:1;min-width:0;">
         <div class="ntitle">한옥 레인 싱잉볼</div>
-        <div class="nsub">투표 1위 — 토요일 오후 확정 (4표·44%)<br>구체 일정 추후 공지</div>
+        <div class="nsub">투표 1위 — 토요일 오후 확정 (4표·44%) · 구체 일정 추후 공지</div>
       </div>
     </div>
     <div class="nrow">
       <span class="nicon">☀️</span>
       <div style="flex:1;min-width:0;">
         <div class="ntitle">ZEN-T Wellness Day</div>
-        <div class="nsub">참여 프로그램 투표 1위 (3표·33%)<br>구체 일정 추후 공지</div>
+        <div class="nsub">참여 프로그램 투표 1위 (3표·33%) · 구체 일정 추후 공지</div>
       </div>
     </div>
     <div class="nrow">
@@ -210,8 +220,8 @@ body{background:#F8F7F3;font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-se
   </div>
 
   <div class="footer">
-    <div style="font-size:12px;color:#888780;line-height:1.8;">소중한 의견 모아주셔서 감사해요 😊<br>궁금한 점은 언제든 편하게 문의해 주세요!</div>
-    <div style="margin-top:6px;font-size:13px;font-weight:600;color:#2C2C2A;">ZEN-T 임원진 드림 🌿</div>
+    <div style="font-size:13px;color:#888780;line-height:1.8;">소중한 의견 모아주셔서 감사해요 😊<br>궁금한 점은 언제든 편하게 문의해 주세요!</div>
+    <div style="margin-top:6px;font-size:14px;font-weight:600;color:#2C2C2A;">ZEN-T 임원진 드림 🌿</div>
   </div>
 
 </div>
